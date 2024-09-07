@@ -1,0 +1,533 @@
+.msg {
+	position: relative;
+	top: -710px;
+	left: 630px;
+	font-size: 20px;
+	font-weight: bold;
+	color: black;
+	font-size: 24;
+	z-index: 4;
+}
+
+.con {
+	font-size: 46px;
+	padding-bottom: 20px;
+	position: relative;
+	left: 30px;
+	top: 20px;
+	color: #e85a4f;
+	/*animation: drop 3s ease-in 5s 1 normal none;*/
+}
+
+.back1 {
+	display: block;
+	background-color: whitesmoke;
+	position: relative;
+	top: 50px;
+	left: 300px;
+	height: 500px;
+	width: 850px;
+	border-radius: 20px;
+	z-index: 0;
+}
+
+.flipCard {
+	-webkit-perspective: 800;
+	-ms-perspective: 800;
+	-moz-perspective: 800;
+	-o-perspective: 800;
+	width: 700px;
+	height: 400px;
+	position: relative;
+	top: -520px;
+	left: 375px;
+	border-radius: 15px;
+	overflow: hidden;
+
+}
+
+.flipCard .card.flipped {
+	transform: rotatey(-180deg);
+	-ms-transform: rotatey(-180deg);
+	/* IE 9 */
+	-moz-transform: rotatey(-180deg);
+	/* Firefox */
+	-webkit-transform: rotatey(-180deg);
+	/* Safari and Chrome */
+	-o-transform: rotatey(-180deg);
+	/* Opera */
+}
+
+.flipCard .card {
+	width: 100%;
+	height: 100%;
+	-webkit-transform-style: preserve-3d;
+	-webkit-transition: 0.5s;
+	-moz-transform-style: preserve-3d;
+	-moz-transition: 0.5s;
+	-ms-transform-style: preserve-3d;
+	-ms-transition: 0.5s;
+	-o-transform-style: preserve-3d;
+	-o-transition: 0.5s;
+	transform-style: preserve-3d;
+	transition: 0.5s;
+}
+
+.flipCard .card .side {
+	width: 100%;
+	height: 100%;
+	padding: 10px;
+	cursor: pointer;
+	position: absolute;
+	box-sizing: border-box;
+	z-index: 1;
+	backface-visibility: hidden;
+	/* W3C */
+	-webkit-backface-visibility: hidden;
+	/* Safari & Chrome */
+	-moz-backface-visibility: hidden;
+	/* Firefox */
+	-ms-backface-visibility: hidden;
+	/* Internet Explorer */
+	-o-backface-visibility: hidden;
+	/* Opera */
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+	overflow: auto;
+}
+
+.flipCard .card .back {
+	transform: rotatey(-180deg);
+	-ms-transform: rotatey(-180deg);
+	/* IE 9 */
+	-moz-transform: rotatey(-180deg);
+	/* Firefox */
+	-webkit-transform: rotatey(-180deg);
+	/* Safari and Chrome */
+	-o-transform: rotatey(-180deg);
+	/* Opera */
+}
+
+.flipCard .card .front img {
+	width: 100%;
+	height: 100%;
+	border-radius: 15px;
+
+
+}
+
+
+
+
+.button1 {
+	border: none;
+	position: relative;
+	top: -480px;
+	left: 630px;
+	height: 80px;
+	width: 200px;
+	border-radius: 40%;
+	cursor: pointer;
+	font-size: 24px;
+	text-align: center;
+	background-color: #e98074;
+	font-weight: bold;
+	z-index: 3;
+}
+
+.btn-78,
+.btn-78 *,
+.btn-78 :after,
+.btn-78 :before,
+.btn-78:after,
+.btn-78:before {
+	border: 0 solid;
+	box-sizing: border-box;
+}
+
+.btn-78 {
+	-webkit-tap-highlight-color:
+		transparent;
+	-webkit-appearance: button;
+	background-image: none;
+	color:
+		black;
+	cursor: pointer;
+	font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+		Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+		Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+	font-size: 100%;
+	line-height: 1.5;
+	margin: 0;
+	-webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+	padding: 0;
+}
+
+.btn-78:disabled {
+	cursor: default;
+}
+
+.btn-78:-moz-focusring {
+	outline: auto;
+}
+
+.btn-78 svg {
+	display: block;
+	vertical-align: middle;
+}
+
+.btn-78 [hidden] {
+	display: none;
+}
+
+.btn-78 {
+	-webkit-animation: pulse 2s infinite;
+	animation: pulse 2s infinite;
+	border: 1px solid #e98074;
+	border-radius: 999px;
+	box-shadow: 0 0 0 2em transparent;
+	box-sizing: border-box;
+	display: block;
+	font-weight: 900;
+	-webkit-mask-image: none;
+	overflow: hidden;
+	padding: 1.2rem 3rem;
+	position: relative;
+	text-transform: uppercase;
+}
+
+
+/*back*/
+.btn-77,
+.btn-77 *,
+.btn-77 :after,
+.btn-77 :before,
+.btn-77:after,
+.btn-77:before {
+	display: none;
+	border: 0 solid;
+	box-sizing: border-box;
+	z-index: 4;
+}
+
+
+.btn-77 {
+	-webkit-tap-highlight-color:
+		transparent;
+	-webkit-appearance: button;
+	background-color: #e98074;
+	background-image: none;
+	color:
+		black;
+	cursor: pointer;
+	font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+		Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+		Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+	font-size: 100%;
+	line-height: 1.5;
+	margin: 0;
+	-webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+	padding: 0;
+}
+
+.btn-77:disabled {
+	cursor: default;
+}
+
+.btn-77:-moz-focusring {
+	outline: auto;
+}
+
+.btn-77 svg {
+	display: block;
+	vertical-align: middle;
+}
+
+.btn-77 [hidden] {
+	display: none;
+}
+
+.btn-77 {
+	-webkit-animation: pulse 2s infinite;
+	animation: pulse 2s infinite;
+	border: 1px solid #e98074;
+	border-radius: 999px;
+	box-shadow: 0 0 0 2em transparent;
+	box-sizing: border-box;
+	font-weight: 900;
+	-webkit-mask-image: none;
+	overflow: hidden;
+	padding: 1.2rem 3rem;
+	position: relative;
+	text-transform: uppercase;
+}
+
+@-webkit-keyframes pulse {
+	0% {
+		box-shadow: 0 0 0 0 #e98074;
+	}
+}
+
+@keyframes pulse {
+	0% {
+		box-shadow: 0 0 0 0 #e98074;
+	}
+}
+
+.flipCard .card .back {
+	background: #e85a4f;
+
+	/* Orange to red gradient */
+	border-radius: 15px;
+	box-shadow: 0 4px 8px #e98074;
+	text-align: center;
+	color: whitesmoke;
+	padding-top: 50px;
+	font-family: Georgia;
+	font-size: 2em;
+}
+
+
+fieldset {
+	border: none;
+	margin-bottom: 15px;
+	padding: 0;
+	display: flex;
+	align-items: center;
+	position: relative;
+	top: 25px;
+	left: -10px;
+}
+
+label {
+	font-size: 16px;
+	color: whitesmoke;
+	width: 100px;
+	/* Fixed width for labels */
+	margin-right: 10px;
+	/* Space between label and input */
+}
+
+.input-card-info {
+	width: 100%;
+	padding: 20px;
+	border: 2px solid white;
+	border-radius: 8px;
+	font-size: 14px;
+	box-sizing: border-box;
+	outline: none;
+	transition: border-color 0.3s ease;
+	flex: 1;
+
+	/* Allows the input to take up the remaining space */
+}
+
+.input-card-info:focus {
+	border-color: #e98074;
+	/* Focus color to match the gradient */
+}
+
+.input-card-info--lg {
+	height: 100px;
+	resize: none;
+	/* Prevent resizing for the message box */
+}
+
+
+.btn-95,
+.btn-95 *,
+.btn-95 :after,
+.btn-95 :before,
+.btn-95:after,
+.btn-95:before {
+	border: 0 solid;
+	box-sizing: border-box;
+	position: relative;
+	left: 605px;
+	top: -353px;
+	z-index: 5;
+}
+
+.btn-95 {
+	-webkit-tap-highlight-color:
+		transparent;
+	-webkit-appearance: button;
+	background-color:
+		#e98074;
+	background-image: none;
+	color:
+		#fff;
+	cursor: pointer;
+	font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+		Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+		Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+	font-size: 100%;
+	font-weight: 900;
+	line-height: 1.5;
+	margin: 0;
+	-webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+	text-transform: uppercase;
+}
+
+.btn-95:disabled {
+	cursor: default;
+}
+
+.btn-95:-moz-focusring {
+	outline: auto;
+}
+
+.btn-95 svg {
+	vertical-align: middle;
+}
+
+.btn-95 [hidden] {
+	display: none;
+}
+
+.btn-95 {
+	background:
+		hsla(0, 0%, 100%, 0.2);
+	background-clip: content-box;
+	border-radius: 50%;
+	box-sizing: border-box;
+	display: block;
+	height: 50px;
+	-webkit-mask-image: none;
+	padding: 0;
+	position: relative;
+	transition: 0.2s;
+	width: 50px;
+}
+
+.btn-95:hover {
+	background:
+		#fff;
+}
+
+.btn-95 svg {
+	--size: 35px;
+	fill:
+		#fff;
+	display: block;
+	height: var(--size);
+	left: calc(50% - var(--size) / 2);
+	position: absolute;
+	top: calc(50% - var(--size) / 2);
+	width: var(--size);
+}
+
+.btn-95:hover svg {
+	fill:
+		#000;
+}
+
+.btn-95:before {
+	border: 2.5px solid #fff;
+	border-radius: 50%;
+	content: "";
+	inset: 1px;
+	opacity: 0;
+	pointer-events: none;
+	position: absolute;
+	transform: scale(2);
+	transition: 0.2s;
+}
+
+.btn-95:hover:before {
+	opacity: 1;
+	transform: scale(1);
+}
+
+
+/* Styles for medium-sized screens */
+@media only screen and (max-width: 800px) {
+	.back1 {
+		top: 50px;
+		left: 50px;
+		height: 450px;
+		width: 700px;
+	}
+
+	.flipCard {
+		width: 600px;
+		height: 350px;
+		left: 100px;
+		top: -400px;
+	}
+
+	.button1 {
+		top: -400px;
+		left: 300px;
+		height: 70px;
+		width: 170px;
+	}
+
+	.flipCard .card .front {
+		font-size: 2.5em;
+		line-height: 140px;
+	}
+
+	.btn-95 {
+		left: 530px;
+		top: -350px;
+	}
+}
+
+/* For small screens (phones) */
+@media (max-width: 480px) {
+	.back1 {
+		top: 100px;
+		left: 50px;
+		height: 600px;
+		width: 300px;
+	}
+
+	.flipCard {
+		width: 300px;
+		height: 600px;
+		left: 50px;
+		top: -600px;
+	}
+
+	.flipCard .card {
+		height: 100%;
+	}
+
+	.flipCard .card .front {
+		font-size: 2em;
+		line-height: 120px;
+	}
+
+	.button1 {
+		top: -580px;
+		left: 112px;
+		height: 60px;
+		width: 150px;
+		font-size: 16px;
+	}
+
+	.btn-95 {
+		left: 220px;
+		top: -320px;
+	}
+
+	fieldset {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	label {
+		margin-bottom: 5px;
+		width: auto;
+	}
+
+	.input-card-info {
+		width: 100%;
+		padding: 15px;
+		font-size: 14px;
+	}
+
+	.input-card-info--lg {
+		height: 80px;
+	}
+}

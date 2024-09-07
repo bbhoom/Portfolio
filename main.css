@@ -1,0 +1,362 @@
+@keyframes slideleft {
+    0% {
+        transform: translateX(-700px);
+    }
+
+    70% {
+        transform: translateX(70px);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideright {
+    0% {
+        transform: translateX(700px);
+    }
+
+    70% {
+        transform: translateX(-100px);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: 0%;
+    }
+
+    to {
+        opacity: 90%;
+    }
+}
+
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    background-color: #eae7dc;
+}
+
+
+.bgimg {
+    position: relative;
+    z-index: 0;
+    width: 1700px;
+    height: 600px;
+    top: -15px;
+    background-blend-mode: multiply;
+}
+
+
+.bg-primary {
+    background: #eae7dc
+        /* background: linear-gradient(#e85a4f 0%, #e85a4f 10%, #eae7dc 10%, #eae7dc 20%); */
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.container {
+    scroll-snap-type: y mandatory;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    height: 100vh;
+    scroll-behavior: smooth;
+
+
+}
+
+section {
+    height: 100vh;
+    scroll-snap-align: start;
+}
+
+.portfolio {
+    display: inline;
+    position: relative;
+    font-size: 60px;
+    top: 0px;
+    LEFT: 20px;
+    color: #8e8d8a;
+    z-index: 1;
+    animation: fade 3s ease-in 0s 1 normal none;
+
+}
+
+.topnav a {
+    font: italic small-caps bold cursive;
+    position: relative;
+    left: 1070px;
+    top: -65px;
+    font-size: 45px;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    z-index: 1;
+    animation: fade 3s ease-in 0s 1 normal none;
+}
+
+.topnav a:hover {
+    color: #8e8d8a;
+}
+
+.topnav a:active {
+    color: #8e8d8a;
+}
+
+.line {
+    border: 3px dashed #e85a4f;
+    position: relative;
+    top: -70px;
+    animation: fade 3s ease-in 0s 1 normal none;
+
+}
+
+.img-fluid {
+    position: relative;
+    top: -830px;
+    left: 440px;
+    width: 600px;
+    height: 650px;
+    border-radius: 10%;
+    z-index: 2;
+    animation: fade 2s ease-in;
+
+}
+
+.name {
+    position: relative;
+    top: -40px;
+    left: 85px;
+    font-size: 120px;
+    z-index: 0;
+    color: #e98074;
+    animation: slideleft 5s ease-in 0s 1 normal none;
+}
+
+.name1 {
+    position: relative;
+    top: -250px;
+    left: 495px;
+    font-size: 120px;
+    z-index: 0;
+    color: #e98074;
+    animation: slideleft 5s ease-in 0s 1 normal none;
+}
+
+
+
+.txt-rotate {
+    position: relative;
+    top: -1350px;
+    left: 980px;
+    color: #e85a4f;
+    font-size: 55px;
+    animation: fade 4s ease-in 0s 1 normal none;
+    z-index: 1;
+
+}
+
+.textaboutme {
+    position: relative;
+    top: -1340px;
+    left: 920px;
+    max-width: 400px;
+    text-align: justify;
+    color: #8e8d8a;
+    font-size: 25px;
+    animation: fade 4s ease-in 0s 1 normal none;
+}
+
+.buttonabout {
+    position: relative;
+    top: -1300px;
+    left: 1050px;
+    width: 120px;
+    height: 40px;
+    z-index: 30;
+    background-color: #eae7dc;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 15px;
+    color: black;
+    flex-direction: column;
+    justify-content: center;
+    border: none;
+    padding: 12px;
+    gap: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    animation: fade 3s ease-in 0s 1 normal none;
+}
+
+.buttonabout::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    left: -4px;
+    top: -1px;
+    margin: auto;
+    width: 128px;
+    height: 48px;
+    border-radius: 10px;
+    background: linear-gradient(-45deg, #e98074 0%, #e85a4f 100%);
+    z-index: -5;
+    pointer-events: none;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.buttonabout::after {
+    content: "";
+    z-index: 4;
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(-45deg, #e98074 0%, #e85a4f 100%);
+    transform: translate3d(0, 0, 0) scale(0.95);
+    filter: blur(20px);
+}
+
+.buttonabout:hover::after {
+    filter: blur(30px);
+}
+
+.buttonabout:hover::before {
+    transform: rotate(-180deg);
+}
+
+.buttonabout:active::before {
+    scale: 0.7;
+}
+
+
+
+
+/* For medium screens (tablets) */
+@media (max-width: 768px) {
+    .portfolio {
+        font-size: 40px;
+        left: 10px;
+    }
+
+    .topnav {
+        left: -1000px;
+
+    }
+
+    .name {
+        font-size: 55px;
+        top: -20px;
+        left: 100px;
+    }
+
+    .name1 {
+        font-size: 55px;
+        top: -140px;
+        left: 240px;
+    }
+
+    .img-fluid {
+        top: -400px;
+        left: 190px;
+        width: 400px;
+        height: 450px;
+    }
+
+    .txt-rotate {
+        font-size: 30px;
+        top: -520px;
+        left: 120px;
+    }
+
+    .textaboutme {
+        font-size: 18px;
+        top: -450px;
+        left: 50px;
+        max-width: 60%;
+        margin-top: 20px;
+    }
+
+    .buttonabout {
+        top: -450px;
+        left: 90px;
+        width: 50px;
+        height: 35px;
+        font-size: 12px;
+        margin-top: 20px;
+    }
+}
+
+/* For small screens (phones) */
+@media (max-width: 480px) {
+    .portfolio {
+        font-size: 33px;
+        left: 15px;
+        top: 15px;
+    }
+
+
+    .topnav a {
+        font-size: 12px;
+        left: 1200px;
+        z-index: 5;
+
+    }
+
+
+    .line {
+        top: -20px;
+    }
+
+
+    .name {
+        font-size: 45px;
+        top: -20px;
+        left: 50px;
+    }
+
+    .name1 {
+        font-size: 45px;
+        top: -90px;
+        left: 183px;
+    }
+
+    .img-fluid {
+        top: -350px;
+        left: 120px;
+        width: 350px;
+        height: 400px;
+    }
+
+    .txt-rotate {
+        font-size: 35px;
+        top: -330px;
+        left: 120px;
+    }
+
+    .textaboutme {
+        font-size: 20px;
+        top: -330px;
+        left: 50px;
+        max-width: 70%;
+    }
+
+    .buttonabout {
+        top: -300px;
+        left: 140px;
+        width: 100px;
+        height: 30px;
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,187 @@
+@keyframes drop {
+    from {
+        transform: translateX(-20px);
+        transform: translateY(-20px);
+    }
+
+    to {
+        transform: translateX(0);
+        transform: translateY(0);
+    }
+
+}
+
+
+.bg-secondary {
+    /* background: #eae7dc; */
+    background: linear-gradient(#eae7dc 0%, #eae7dc 65%, #8e8d8a 65%, #8e8d8a 100%);
+    margin: 0;
+}
+
+.text {
+    border-radius: 16px;
+    max-width: 1180px;
+    height: 400px;
+    margin: 0 30px;
+}
+
+p2 {
+    font-size: 22px;
+    position: relative;
+    color: #8e8d8a
+}
+
+.lineabt {
+    border: 3px solid #e85a4f;
+    position: relative;
+    top: -20px;
+}
+
+.par {
+    max-width: 1500px;
+    margin-left: 30px;
+    margin-right: 30px;
+    text-align: justify;
+}
+
+.abt {
+    font-size: 46px;
+    padding-bottom: 10px;
+    position: relative;
+    left: 30px;
+    top: 20px;
+    color: #e85a4f
+        /*animation: drop 3s ease-in 5s 1 normal none;*/
+}
+
+
+/* Carasole css*/
+
+.pic-list {
+    overflow: hidden;
+    position: relative;
+    top: -157px;
+}
+
+.wrapper {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 15rems;
+    justify-items: stretch;
+    animation: scroll 100s linear infinite;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(calc(-250px * 8));
+    }
+}
+
+
+.tab-titles {
+    display: flex;
+    margin: 10px 0 20px;
+}
+
+.tab-links {
+    margin-right: 50px;
+    font-size: 18px;
+    position: relative;
+    color: black;
+}
+
+.tab-links::after {
+    content: "";
+    width: 0;
+    height: 3px;
+    background: #e98074;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+
+.tab-links.active-link::after {
+    width: 50%;
+}
+
+.tab-contents ul li {
+    list-style: none;
+    margin: 10px 0;
+    position: relative;
+    top: -20px
+}
+
+.tab-contents ul li span {
+    color: #8e8d8a;
+    font-size: 24px;
+}
+
+.tab-contents {
+    display: none;
+}
+
+.tab-contents.active-tab {
+    display: block;
+}
+
+/* General responsive settings */
+@media only screen and (max-width: 800px) {
+
+    .bg-secondary {
+        background: #eae7dc;
+    }
+
+    p2 {
+        font-size: 18px;
+    }
+
+    .par {
+        max-width: 100%;
+        text-align: justify;
+        margin: 5px 10px;
+        position: relative;
+
+    }
+
+    /* Adjust abt section */
+    .abt {
+        font-size: 32px;
+        padding-bottom: 5px;
+        left: 20px;
+        top: 15px;
+    }
+
+
+    /*Adjust picture carousel */
+    .pic-list {
+        position: relative;
+        top: -195px;
+
+
+    }
+
+    /* Adjust tab contents */
+    .tab-contents ul li {
+        margin: 5px 0;
+        position: relative;
+        left: -35px;
+    }
+
+    .tab-contents ul li span {
+        font-size: 18px;
+        line-height: 1.6;
+    }
+}
+
+/* For small screens (phones) */
+@media (max-width: 480px) {
+    .pic-list {
+        position: relative;
+        top: -165px;
+    }
+}
